@@ -21,9 +21,9 @@ const headerContent = `
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="games.html">Games</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/games">Games</a></li>
         </ul>
     </nav>
 </header>
