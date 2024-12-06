@@ -60,13 +60,18 @@ nav .nav-links {
 
 .nav-links li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 26px;
     color: #333;
     transition: color 0.3s;
 }
 
 .nav-links li a:hover {
     color: #555;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Carousel Styles */
