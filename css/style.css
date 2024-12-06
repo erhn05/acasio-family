@@ -16,6 +16,8 @@ header {
     color: #333;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
 }
 
 /* Logo and Site Name */
@@ -74,6 +76,10 @@ nav .nav-links {
     font-weight: bold;
 }
 
+nav .hamburger {
+    display: none;
+}
+
 /* Carousel Styles */
 .carousel-container {
     position: relative;
@@ -123,8 +129,43 @@ button.next {
 
 /* Media Query for Mobile */
 @media (max-width: 768px) {
-    /* Hide navigation links on mobile */
     nav .nav-links {
         display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 10px 0;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the dropdown menu when the hamburger is clicked */
+    nav .nav-links.show {
+        display: block;
+    }
+
+    /* Hamburger menu icon */
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Styling for the dropdown links */
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    nav .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+
+    nav .nav-links a:hover {
+        color: #007bff;
     }
 }

@@ -25,18 +25,40 @@ const headerContent = `
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="games.html">Games</a></li>
         </ul>
+        <div class="hamburger">
+            &#9776;
+        </div>
     </nav>
 </header>
 `;
 document.getElementById('header-container').innerHTML = headerContent;
 
-// Add 'active' class to the corresponding link based on the current page
-const currentPage = window.location.pathname.split('/').pop();
-const navLinks = document.querySelectorAll('.nav-links a');
+// Get the header height dynamically
+const header = document.querySelector('header');
+const navLinks = document.querySelector('nav .nav-links');
 
-navLinks.forEach(link => {
-    const linkPage = link.getAttribute('href');
+// Get the current page's filename
+const currentPage = window.location.pathname.split('/').pop();
+const navLinksItems = document.querySelectorAll('nav .nav-links a');
+
+// Loop through each link to check if it matches the current page
+navLinksItems.forEach(link => {
+    const linkPage = link.getAttribute('href').split('/').pop(); // Get the file name from href
     if (linkPage === currentPage) {
-        link.classList.add('active');
+        link.classList.add('active'); // Add 'active' class if it matches
+    }
+});
+
+// Hamburger menu toggle for dropdown
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    // Set the dropdown position dynamically based on the header height
+    if (navLinks.classList.contains('show')) {
+        const headerHeight = header.offsetHeight; // Get the height of the header
+        navLinks.style.top = `${headerHeight}px`; // Set the top position of the dropdown
+    } else {
+        navLinks.style.top = ''; // Reset top position when hidden
     }
 });
