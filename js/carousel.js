@@ -11,8 +11,6 @@ function moveSlide(step) {
     } else if (currentIndex >= slides.length) {
         currentIndex = 0;
     }
-    console.log(slides)
-    console.log(currentIndex)
 
     const newTransformValue = -currentIndex * 100;
     document.querySelector('.carousel').style.transform = `translateX(${newTransformValue}%)`;
