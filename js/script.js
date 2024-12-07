@@ -16,7 +16,7 @@ const headerContent = `
         <img src="images/logo.png" alt="Logo" class="logo">
         <div class="text-container">
             <span class="site-name">Acasio Family</span>
-            <span class="site-phrase">Home is where our heart is.</span>
+            <span class="site-phrase">Love, Laughter, and Family Moments</span>
         </div>
     </div>
     <nav>
