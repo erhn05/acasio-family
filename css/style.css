@@ -140,21 +140,25 @@ button.next {
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     nav .nav-links {
-        display: none;
+        display: block; /* Change from none to block for animation setup */
         position: absolute;
         left: 0;
+        top: 0;
         width: 100%;
         background-color: #f8f8f8;
-        padding: 10px 0;
+        padding: 0;
         list-style: none;
         margin: 0;
         text-align: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-height: 0; /* Start hidden */
+        overflow: hidden; /* Prevent content from spilling out */
+        transition: max-height 0.5s ease-in-out; /* Smooth slide-down animation */
     }
 
     /* Show the dropdown menu when the hamburger is clicked */
     nav .nav-links.show {
-        display: block;
+        max-height: 300px; /* Adjust this to the height of your expanded menu */
     }
 
     /* Hamburger menu icon */
@@ -172,7 +176,7 @@ button.next {
     nav .nav-links a {
         text-decoration: none;
         color: #333;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     nav .nav-links a:hover {

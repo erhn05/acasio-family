@@ -58,7 +58,5 @@ hamburger.addEventListener('click', () => {
     if (navLinks.classList.contains('show')) {
         const headerHeight = header.offsetHeight; // Get the height of the header
         navLinks.style.top = `${headerHeight}px`; // Set the top position of the dropdown
-    } else {
-        navLinks.style.top = ''; // Reset top position when hidden
     }
 });

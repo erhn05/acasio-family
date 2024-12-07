@@ -1,5 +1,5 @@
 // Embedded JSON data
-const images = [
+const pastChristmasesPhotos = [
 	{
 		"src": "https://lh3.googleusercontent.com/pw/AP1GczOZbe-asrRMaq3tNlMKdMtobe6uSujS5NcodfDTeLD7OZ7F6aRJIsQPVZBXNwDW-WS8G5BYYhvQ2bv7HvWvLRZwcnS5WJIBVWKBzn_oL73q-kotcg0ijyECoKITgUU9ZtuEDotN5aeY4qOkX0_baRs=w1433-h941-s-no-gm?authuser=0",
 		"alt": "001",
@@ -133,11 +133,11 @@ const images = [
 ]
 
 // Populate the carousel
-images.forEach(image => {
+pastChristmasesPhotos.forEach(photo => {
     const carouselSlideContent = `
         <div class="carousel-slide">
-            <img src="${image.src}" alt="${image.alt}" class="carousel-slide-image">
-            <caption>${image.caption}</caption>
+            <img src="${photo.src}" alt="${photo.alt}" class="carousel-slide-image">
+            <caption>${photo.caption}</caption>
         </div>
     `;
     document.getElementById('carousel').innerHTML += carouselSlideContent;
