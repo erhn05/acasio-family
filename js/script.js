@@ -2,9 +2,9 @@
 const headContent = `
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acasio Family</title>
+<title>Erhn Stuff</title>
 <link rel="icon" href="images/favicon.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 `;
 document.head.innerHTML += headContent;
@@ -12,18 +12,14 @@ document.head.innerHTML += headContent;
 // Header content
 const headerContent = `
 <header>
-    <div class="logo-container">
+    <div class="logo-container clickable" onclick="window.location.href='index.html';">
         <img src="images/logo.png" alt="Logo" class="logo">
-        <div class="text-container">
-            <span class="site-name">Acasio Family</span>
-            <span class="site-phrase">Love, Laughter, and Family Moments</span>
-        </div>
+        <span class="site-name">Erhn Stuff</span>
     </div>
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="games.html">Games</a></li>
         </ul>
         <div class="hamburger">
             &#9776;

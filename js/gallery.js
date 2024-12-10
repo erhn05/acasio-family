@@ -1,144 +1,80 @@
-// Embedded JSON data
-const pastChristmasesPhotos = [
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOZbe-asrRMaq3tNlMKdMtobe6uSujS5NcodfDTeLD7OZ7F6aRJIsQPVZBXNwDW-WS8G5BYYhvQ2bv7HvWvLRZwcnS5WJIBVWKBzn_oL73q-kotcg0ijyECoKITgUU9ZtuEDotN5aeY4qOkX0_baRs=w1433-h941-s-no-gm?authuser=0",
-		"alt": "001",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMek-z-86Yo_06mAQhukpj3OisRFxbv0h5BhvK5XWUI24W9Lo7n3m68nM_ZBetyXDG4x6CGuTXFb5QDRhAZBUToJem5mxavMnJk45gNlV_jSa2wGm96knoa05G895aiUrMaQtdbofx-nFxTLrAr5R8=w1372-h951-s-no-gm?authuser=0",
-		"alt": "002",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMHxIweP0SRE2A1nubmPwprc3sJDKEwq6GERvVoI5x8JzNIUq2_yME7T4ecMpISyb5193ADArPeGxfO2Z43pWd8J6g9o7ScFDvbVSEgaAMqb3o3UB3ZN05UGgsCFv-ZZ61Sm0-FlXvNiFx47VtAaRk=w1342-h951-s-no-gm?authuser=0",
-		"alt": "003",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMxLwlwz9JJrUbuaRmjhW5Mc2soJ_YSP6pI4fnFY9FKpyN3_zQJcayTjp-NGDvx0cuu8TUUegQFa7He3JoUgtZgOnPbZjzhuUYLi2cPg3wi-TvVL30OMmn9g-O_v71T8mfjiY_jLIw68Ltxnv5RDRI=w1427-h929-s-no-gm?authuser=0",
-		"alt": "004",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczM-6Ymms55AD5THkUkTLVAaaozqueyUjR2ZfxG5I0ByZ-jlW_ndCQDjy8pCsf_w_ILKUlFyvGo-aY9MK0yHKhxMVOZ7D8bny566JwMYJI65BxfbQ07WufMgdPQcVnL0M_IvGUChLRqlsFVFrw8ewwA=w1376-h951-s-no-gm?authuser=0",
-		"alt": "005",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOZB5z6no55t_Oq1SyakPTFpwDMxXx1g8dgRKKMHAh6CzN2yKQf3Z-8xdlr8JZE4SyHGbT6ubNFyO4qfi8pjLl0T5CYKGU5JaIl6bZY7e7NjxNTmlFdEbuLENNNwWlg-Gf5jnhePuGdfQkplU9sGow=w1342-h951-s-no-gm?authuser=0",
-		"alt": "006",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczNkz0DoVKLWtL_zbwAwC2ZzgZUoQTqAXGuTCQzAvUuDZrkga3fcNWiMft24qWqiHrljo69MQMdORIB4uuSBB6bUTjMWeSeJsP6t6au8ehCNcMxFt5vFz-Gr19J--kM1COyRbTTFEJ1Rb1wGKCVj8V4=w661-h951-s-no-gm?authuser=0",
-		"alt": "007",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOxy2bTOQurUfAIqvnWLuGZfoki2a0WThymvcPeYrrSrYeQfyHO1JnkNooLNXPTwpnI2mfk7slpU1_849DnB6hitiLBljM4gRfQqLcEx4IDg1Vkc8TtcizLYzx-T_6MQR5X7sDYqDZziqG1tYf07Y8=w960-h720-s-no-gm?authuser=0",
-		"alt": "008",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOtcSLbWB7d3mut_9xnCv5VoUEW0yyaNqG2Srd9i5dR_R8Gw_vuKcsTatADAQ_cmODZsKFoHshTz8sFpZlBqCzSQv-0xyhVi42b8QD9KUg8q4lcUJqz_u1kT47ZLE3og5ssN71QtQZdIJ9uE0_nRnU=w960-h720-s-no-gm?authuser=0",
-		"alt": "009",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczNdzyXdrcVqDtJWejo92BM0TGCVPrcehvBFIhcjarWW-LfJUFZAqeP43rg3Nk8S6hgg1_uNW7mOyHdWjlSsGB1xb21KH1551-Cvx9FhwtsslXoe2V90sCV_1AmdauPuVX13RhdSUF0AAEYf0bXgFws=w960-h720-s-no-gm?authuser=0",
-		"alt": "010",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMbFlQtSEUl-8wYfxy5gp9Du5ctJDs45dChhnsTRtn3veycKj1yDO94mJfBqrFPCBI7hTN3uhT6OI7BAVZTGvzf2e1ervREYpgRwgShaIv6jcKEHaQ_XbJClmuuLbpfwUmXzLej5mbLlbHCLP2Gozs=w960-h643-s-no-gm?authuser=0",
-		"alt": "011",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczNvgCGFgVHQoJerFt-E1AwlqO6aoF8QbCI0np49XBMBYFybAQEiuy9M4GYUSz-aSVcm351-Fv6cKifGxilbwIVWFHqCTHe3-qDo0mG_8wayyiQmirX42Vi37pgU_ZuIDj3R_b09ymGeq_bh0-B6pLI=w960-h720-s-no-gm?authuser=0",
-		"alt": "012",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczP8htUVxYkCRFUUel4VSR62DolqyZm41JRrfn-oOg1ZGxN6AcOjd26VIMs485PnNCGm_Q13iNAw5O8DyGaV_iD63egRXzORz5Bb2bZCP4aWcbgeKQkHoxKmpDhLez53KMaTKGus0Ph2oEEgrKE_e7k=w960-h643-s-no-gm?authuser=0",
-		"alt": "013",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczM2efAxePlICk4Fm7fmm3kIR_KcrFM1FOo_bLkoK0zeFn_8Pk-ilw9UUg-BF4bJtUdBaJKTQ1gqFMHXqUhb2-bnDt3l_61cStLtlGyh0znzZjeY1g4NmdHVAxYJKoahqlKdo4LQJfZAgh4uTnbpFyI=w960-h720-s-no-gm?authuser=0",
-		"alt": "014",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczNQu9dvaV1F17MEvMZC8fzeH_xj8lcSkH0Ez-971SA4-mMyMQ-DXoyPR8X5DGPvTYzVKCfcTwvgwBleOURC01QxuPAnYSQtAEFGqy8T6zyvOjyZbpp_g4qSev2ejwQqsLlYfqPn8DFPizq1Y9G4fkw=w960-h643-s-no-gm?authuser=0",
-		"alt": "015",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczP1Qw7jxAIvV-mC3V1CFxc30lBOWC6jUD3JAupUhZsWHbAAjKZE_fhHdTEwgWzofhtfCCwioC69_PgzFMLxQOph_u5bwhd2IU0WdS3Eos29iBWVGv45iDq4DS2YaECk_1LtmNTcncH8zuc3ZO1cYHo=w637-h951-s-no-gm?authuser=0",
-		"alt": "016",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOXyUu4mHAhmVvYgI5wLvXith3WpoPBk0e2ovXvXHvgc3jkNqGRNppMTC72E5g-1ezPZwkpjHklTLIu_aFwsVM92QEsyzlHhKxMHtxUVF30HgvoSNU5ZsrvanC_uWFl2nuqL9nSq_dBVHexa0ri2lk=w960-h643-s-no-gm?authuser=0",
-		"alt": "017",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMkty81LmfI_tO8vYq0VYCvpWOh_79kpW75dAE0NtDqlDDrfQuNhhdgqXGqckQzTcjsh433-bWqS5ejSKo0U4bvPeQqDRhOWkcOVFzIH5dOnSM55zrs4iHwIqQhaWDH2i_TyGxWovu4lF_FbuH9dmc=w960-h720-s-no-gm?authuser=0",
-		"alt": "018",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMSzyc_kLtZ5R_a28X1kEsdKULRSHdSqd2sAeb_D3kuyWn13PT-PEbLscxQbWm78zNzp6SWWkWpxIloBxdqH3f_PI1xzGzde3RnnQ1O_Ht8GbxKW0OjCp9-MyzZReepqJk4bbXY5z8O-2VfAKbqNYk=w960-h720-s-no-gm?authuser=0",
-		"alt": "019",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczN-lbJ4WHjKiBZ_MvIJcSfmDI1LYnrMA4cmsPrMGGg1B2eFP7GAEH7iW4yNUtTQBraFttj6dyqhsKLBaSIF8PLSALmlFKq_-QhDValv1Mma4enuaEMpHpELZ2-1A2RcSKNWI0yB2YdmZwuWmbB74mY=w960-h653-s-no-gm?authuser=0",
-		"alt": "020",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczPvByw9LzZgOiWyW06NhGObnScFo7ikgK_-QoCPzXuVaLuiEuZUUJK9a5C_Abu7vYmBJFSP1OKH71qsSS4I_VduMguM9d8jECrO8lZRolid30Y8MHO1pD75jMYX2vf7E6iV0eTeVxZlIS6JNhn5FFw=w960-h845-s-no-gm?authuser=0",
-		"alt": "021",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOmZf7ZvQGFKSV3vFXpTHCF-xAKHuow3FSDuTYWg80OHuOTvf1r19smtfaL95Y16LZPU12nAjuuTTWNJVtM1bwNcGP8xxxDN2frwB0LSPJT5OqCbRv28Y-bG5iwRjFBzMABiIfCV_mHgOPEeiuUtEo=w713-h951-s-no-gm?authuser=0",
-		"alt": "022",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczO7z49kj6YM1XafRVbGlG4USjobb6spfdsT-4PxZ4QMtzuZ5UPQlSEGy1yCLVw2eoyIvGJ2VZ7FyXHGq5jN57Xs49lJyJiwrPgcfBZ52YL2tMs5N1BYK2vx3M_GBCBHk9wzGB3n-n68eG5yuopvy5A=w713-h951-s-no-gm?authuser=0",
-		"alt": "023",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMvA_cvmPhzt_CRKmXYz3gJrG9dwKL9v0Ym4sOXEuBXOeOqT19aADHveCaeCYH1gIxkjYFYTrDiDoJIFlDdpELrGs8YepGlMfVTUA90QPhR4Dx8E8tFiEgpYmJ6n3SGa8-2euayyH-Doocfv07We6o=w713-h951-s-no-gm?authuser=0",
-		"alt": "024",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczOSoT2Fc4Zeer2rR1vMH55N5FGP-mmu7B-5iYk-75FJCRZGVtlG5xFBZk4Qx1A-R40a6MFixLdgf98uhhT2Zp4558jtKlITEOkgZH_3bDxhxIHRapES6hNNxpjQkfabojjd9GoAfeSl9xJlHNlmPCU=w713-h951-s-no-gm?authuser=0",
-		"alt": "025",
-		"caption": ""
-	},
-	{
-		"src": "https://lh3.googleusercontent.com/pw/AP1GczMBOX-SogXmeXPiacYiwst51rIMOM3l9aEFdjcDCbNx-H2m-uo-paxFnp-SW0MuQDvRMd500kixAIK86JIeTHeR9iykBaK_GWNt44chGmkWo0WtTJhzsbBhL3I49Un9-M3otivQPzfcLLjrc2R3-9c=w1268-h951-s-no-gm?authuser=0",
-		"alt": "026",
-		"caption": ""
-	}
-]
+// JSON variable with multiple image entries
+const imageData = [
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/d9p4rf1-3491eed8-084a-4826-85e4-8c8a64c13678.png/v1/fill/w_894,h_894,q_70,strp/vanellope_by_erhn_d9p4rf1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZDlwNHJmMS0zNDkxZWVkOC0wODRhLTQ4MjYtODVlNC04YzhhNjRjMTM2NzgucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Ih-1DlXp7HF3BYdhjJZy4PWcTkGeFO6_qZ-EtPllFfs",
+        "title": "Vanellope"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/d9sf1zy-7843fdd0-d928-45da-bbbd-3366e7e06810.png/v1/fill/w_894,h_894,q_70,strp/dead_master_by_erhn_d9sf1zy-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZDlzZjF6eS03ODQzZmRkMC1kOTI4LTQ1ZGEtYmJiZC0zMzY2ZTdlMDY4MTAucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1hq4SjXs4undg54GwjevL_gLtOe7rUDshjQcA9GdphM",
+        "title": "Dead Master"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/da05pod-b7715755-3c13-4f7f-80e0-c93e7832bc72.png/v1/fill/w_894,h_894,q_70,strp/velma_by_erhn_da05pod-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGEwNXBvZC1iNzcxNTc1NS0zYzEzLTRmN2YtODBlMC1jOTNlNzgzMmJjNzIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YvSZCne0EK4yOOqIOibqqgV8ZyTcl6DHOJKQZNOIQsw",
+        "title": "Velma"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dawb24a-1c20016b-c7fc-4042-a6e3-4826592d6913.png/v1/fill/w_894,h_894,q_70,strp/hana_by_erhn_dawb24a-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGF3YjI0YS0xYzIwMDE2Yi1jN2ZjLTQwNDItYTZlMy00ODI2NTkyZDY5MTMucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kSmYVnNh4h02VqO-5Fs3uO9Mm3TIS7MfG4rhuXrTUF8",
+        "title": "Hana"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dawdchh-ee97c44c-545f-441b-9c1f-03ef2a8be33d.png/v1/fill/w_894,h_894,q_70,strp/lena_by_erhn_dawdchh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGF3ZGNoaC1lZTk3YzQ0Yy01NDVmLTQ0MWItOWMxZi0wM2VmMmE4YmUzM2QucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Dl0xHHOSu2MJc6isxw7-06gxGrFHVg3aqP4gYhYBSqo",
+        "title": "Lena"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dawp5ir-f12ca084-418f-4d6c-ab3d-8ac64cb8dfcf.png/v1/fill/w_894,h_894,q_70,strp/mei_by_erhn_dawp5ir-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGF3cDVpci1mMTJjYTA4NC00MThmLTRkNmMtYWIzZC04YWM2NGNiOGRmY2YucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kfY3MOEbTglD6Qcoh0dtZYgF1OVgwJo7vFjJtJdyLbw",
+        "title": "Mei"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/daxak5l-908ced02-a34c-499c-aaa8-228871cb83e1.png/v1/fill/w_894,h_894,q_70,strp/angela_by_erhn_daxak5l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGF4YWs1bC05MDhjZWQwMi1hMzRjLTQ5OWMtYWFhOC0yMjg4NzFjYjgzZTEucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.IEIGFKXjnRcBcFexDlJe7Ql02cQHT6rk2aU4CkBj6es",
+        "title": "Angela"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/de2r5f4-4d947428-81bb-4ad8-8c7e-6642687d1977.png/v1/fill/w_894,h_894,q_70,strp/amelie_by_erhn_de2r5f4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGUycjVmNC00ZDk0NzQyOC04MWJiLTRhZDgtOGM3ZS02NjQyNjg3ZDE5NzcucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7_vVwTsO2u9auxDlCQl8RbAAhi53tcvGVR75f85QZJg",
+        "title": "Amelie"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/demyabo-b7e2ffd8-7cd2-4006-802c-7ec14e34c04c.png/v1/fill/w_894,h_894/sayu_by_erhn_demyabo-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGVteWFiby1iN2UyZmZkOC03Y2QyLTQwMDYtODAyYy03ZWMxNGUzNGMwNGMucG5nIiwid2lkdGgiOiI8PTEwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.q8euuhXl6MbkwFHsQMhrJwNlbrs25xlNTGKjQ78AlhQ",
+        "title": "Sayu"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dfng21b-e0e12546-ffe9-4e26-9535-caf0369a81a2.png/v1/fill/w_894,h_894,q_70,strp/iono_by_erhn_dfng21b-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzk1YjhmODRlLWViZmQtNDQyNC1hNjcwLWFhYjA1ZmJiNmI1ZlwvZGZuZzIxYi1lMGUxMjU0Ni1mZmU5LTRlMjYtOTUzNS1jYWYwMzY5YTgxYTIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sgRm0jXpaK_G5w2RrnqJ_614G3yscFQ7Wp5gfaIEUB4",
+        "title": "Iono"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dh2mkym-dd32ec03-aab9-4bb4-b1be-01f2bf5fba36.png/v1/fill/w_894,h_894,q_70,strp/frieren_by_erhn_dh2mkym-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTIwIiwicGF0aCI6IlwvZlwvOTViOGY4NGUtZWJmZC00NDI0LWE2NzAtYWFiMDVmYmI2YjVmXC9kaDJta3ltLWRkMzJlYzAzLWFhYjktNGJiNC1iMWJlLTAxZjJiZjVmYmEzNi5wbmciLCJ3aWR0aCI6Ijw9OTIwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.jUP2xIS6j3h4F5tl4TmzP7PBqWblOSecDz8w_xge9Ps",
+        "title": "Frieren"
+    },
+    {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/95b8f84e-ebfd-4424-a670-aab05fbb6b5f/dhb9wv6-7f6bfdd9-6195-4eea-aec5-5d695e004fd8.png/v1/fill/w_880,h_880,q_80,strp/toph_by_erhn_dhb9wv6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgwIiwicGF0aCI6IlwvZlwvOTViOGY4NGUtZWJmZC00NDI0LWE2NzAtYWFiMDVmYmI2YjVmXC9kaGI5d3Y2LTdmNmJmZGQ5LTYxOTUtNGVlYS1hZWM1LTVkNjk1ZTAwNGZkOC5wbmciLCJ3aWR0aCI6Ijw9ODgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NX_JzM7f75EqAaGkqGKk59Do_KZoXpwdwhrRsSCcWjw",
+        "title": "Toph"
+    }
+];
 
-// Populate the carousel
-pastChristmasesPhotos.forEach(photo => {
-    const carouselSlideContent = `
-        <div class="carousel-slide">
-            <img src="${photo.src}" alt="${photo.alt}" class="carousel-slide-image">
-            <caption>${photo.caption}</caption>
-        </div>
-    `;
-    document.getElementById('carousel').innerHTML += carouselSlideContent;
+// Get the container element where the images will be inserted
+const gallery = document.getElementById('gallery');
+
+// Loop through the imageData array and create a card for each image
+imageData.forEach(data => {
+    // Create a new div for each card (drawing container)
+    const drawingContainer = document.createElement('div');
+    drawingContainer.classList.add('drawing-container'); // Add the class for styling
+
+    // Create an <img> element for the image
+    const imgElement = document.createElement('img');
+    imgElement.src = data.image;  // Set the image source from the JSON
+    imgElement.alt = data.title;  // Set the alt text from the JSON
+
+    // Create a div for the title
+    const cardTitle = document.createElement('div');
+    cardTitle.classList.add('card-title');  // Add the class for styling
+    cardTitle.textContent = data.title;    // Set the title text from the JSON
+
+    // Append the <img> element to the drawing container
+    drawingContainer.appendChild(imgElement);
+
+    // Append the title (cardTitle) to the drawing container
+    drawingContainer.appendChild(cardTitle);
+
+    // Append the drawing container to the gallery
+    gallery.appendChild(drawingContainer);
 });
