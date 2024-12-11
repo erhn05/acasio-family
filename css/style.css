@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #c1baa1;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Logo and Site Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.site-name {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.site-phrase {
+    font-size: 20px;
+    font-weight: 400;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Navigation Links */
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 26px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #555;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: block; /* Change from none to block for animation setup */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-height: 0; /* Start hidden */
+        overflow: hidden; /* Prevent content from spilling out */
+        transition: max-height 0.5s ease-in-out; /* Smooth slide-down animation */
+    }
+
+    /* Show the dropdown menu when the hamburger is clicked */
+    nav .nav-links.show {
+        max-height: 300px; /* Adjust this to the height of your expanded menu */
+    }
+
+    /* Hamburger menu icon */
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Styling for the dropdown links */
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    nav .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 20px;
+    }
+
+    nav .nav-links a:hover {
+        color: #007bff;
+    }
+}
