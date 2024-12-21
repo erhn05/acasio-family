@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <div class="video-player">
+            <iframe 
+                src="https://drive.google.com/file/d/1VhunpAWpqA0aIWJAbJKKadLs3xGEDGxc/preview"
+                width="640"
+                height="480"
+                allow="autoplay"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <!--div class="carousel">
+            <img src="thumbnail1.jpg" alt="Video 1" data-video-id="VIDEO_ID_1">
+            <img src="thumbnail2.jpg" alt="Video 2" data-video-id="VIDEO_ID_2">
+            <img src="thumbnail3.jpg" alt="Video 3" data-video-id="VIDEO_ID_3">
+        </div-->
+        <!--iframe 
+            src="https://drive.google.com/file/d/19jhdtJLWx4tGD4P1WIGhHazX8gTn9kis/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="https://drive.google.com/file/d/1VhunpAWpqA0aIWJAbJKKadLs3xGEDGxc/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen>
+        </iframe-->
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <!--script>
+        const videoPlayer = document.getElementById('video-player');
+        const thumbnails = document.querySelectorAll('.carousel img');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+            const videoId = thumbnail.getAttribute('data-video-id');
+            videoPlayer.src = `https://drive.google.com/file/d/${videoId}/preview`;
+            });
+        });
+    </script-->
+</body>
+</html>
