@@ -8,9 +8,13 @@ const videos = [
         "src": "https://drive.google.com/file/d/1VhunpAWpqA0aIWJAbJKKadLs3xGEDGxc/preview"
     },
     {
-        "title": "",
+        "title": "Guess the Drawing 01",
         "src": "https://drive.google.com/file/d/10eKfmiWYur7p4xIt-i170N9g64urwuza/preview"
-    }
+    },
+    {
+        "title": "Guess the Drawing 02",
+        "src": "https://drive.google.com/file/d/1JPPZl-nSLMrPr6AM9Fe3YTzBSAVxhYk1/preview"
+    },
 ]
 
 // Populate the video controls
