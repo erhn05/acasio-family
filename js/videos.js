@@ -1,5 +1,9 @@
 const videos = [
     {
+        "title": "Opening Prayer",
+        "src": "https://drive.google.com/file/d/1t3O5y2x1BLHLdc9lpXjZD36JwhHbNDAe/preview"
+    },
+    {
         "title": "Pasko Na Sinta Ko by Niel Andrew Acasio",
         "src": "https://drive.google.com/file/d/19jhdtJLWx4tGD4P1WIGhHazX8gTn9kis/preview"
     },
