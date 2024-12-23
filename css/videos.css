@@ -36,3 +36,12 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow for emphasis */
     transform: scale(1.1); /* Slightly larger to indicate selection */
 }
+
+/* Adjust grid layout for smaller screens */
+@media (max-width: 768px) {
+    #video-controls {
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Fill rows while keeping columns responsive */
+        gap: 50px; /* Reduce gap for smaller screens */
+    }
+}
