@@ -27,6 +27,10 @@ const videos = [
         "title": "Guess the Drawing 04",
         "src": "https://drive.google.com/file/d/1gKW00a532y-WnqoW2tH4kfplKC8So_74/preview"
     },
+    {
+        "title": "Family Video 2024",
+        "src": "https://drive.google.com/file/d/1gMxx0p5-u9Z-mICbjaAaz1YD2iJkLoL6/preview"
+    },
 ]
 
 // Populate the video controls
