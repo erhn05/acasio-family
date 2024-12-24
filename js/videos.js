@@ -23,6 +23,10 @@ const videos = [
         "title": "Guess the Drawing 03",
         "src": "https://drive.google.com/file/d/10xpJq5yx8guspgS9pvEBDykQyPsdHqFa/preview"
     },
+    {
+        "title": "Guess the Drawing 04",
+        "src": "https://drive.google.com/file/d/1gKW00a532y-WnqoW2tH4kfplKC8So_74/preview"
+    },
 ]
 
 // Populate the video controls
