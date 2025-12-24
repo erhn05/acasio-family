@@ -3,6 +3,10 @@ const videos = [
         "title": "Opening Prayer",
         "src": "https://drive.google.com/file/d/1t3O5y2x1BLHLdc9lpXjZD36JwhHbNDAe/preview"
     },
+	{
+        "title": "Family Video 2025",
+        "src": "https://drive.google.com/file/d/1xAUXl_fBrXGp1IfLCrgmCvtZw3cTwJYl/preview"
+    },
     {
         "title": "Pasko Na Sinta Ko by Niel Andrew Acasio",
         "src": "https://drive.google.com/file/d/19jhdtJLWx4tGD4P1WIGhHazX8gTn9kis/preview"
@@ -30,7 +34,7 @@ const videos = [
     {
         "title": "Family Video 2024",
         "src": "https://drive.google.com/file/d/1gMxx0p5-u9Z-mICbjaAaz1YD2iJkLoL6/preview"
-    },
+    }
 ]
 
 // Populate the video controls
